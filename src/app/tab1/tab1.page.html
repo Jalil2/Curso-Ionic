@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Pagina 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <!--
+  <ion-card *ngFor="let animal of vanimales" class="welcome-card">
+    <ion-img src={{animal.img}}></ion-img>
+    <ion-card-header>
+    
+      <ion-card-title>Nombre: {{animal.nombre}}</ion-card-title>
+      <ion-card-subtitle>Raza: {{animal.raza}}</ion-card-subtitle>
+      <ion-card-subtitle>Generalmente come {{animal.comida}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{animal.descripcion}}</p>
+    </ion-card-content>
+  </ion-card>
+-->
+
+
+<ion-card class="welcome-card">
+    <ion-img src="/assets/_ionicons_svg_md-contact.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Empezando</ion-card-subtitle>
+      <ion-card-title>Pagina de contactos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Almacenamiento de contactos</p>
+    </ion-card-content>
+  </ion-card>
+
+<ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Sección Medicos</ion-label>
+    </ion-list-header>
+
+    <ion-item *ngFor="let medico of vmedicos" (click)="medicos()">
+      <ion-icon slot="start" color="medium" name="medkit"></ion-icon>
+      <ion-label>{{medico.nombre}}</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

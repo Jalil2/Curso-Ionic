@@ -1,0 +1,7 @@
+{
+  "name": "myFirsAppIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
